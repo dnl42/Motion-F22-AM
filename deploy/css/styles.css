@@ -371,10 +371,6 @@ textarea {
   height: 80vh;
   background-size: cover;
   background-position: center bottom;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 @media (min-width: 768px) {
   #hero {
@@ -383,23 +379,31 @@ textarea {
 }
 @media (min-width: 1024px) {
   #hero {
-    height: 60vh;
+    height: 80vh;
   }
 }
-#hero h1 {
+#hero #overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#hero #overlay h1 {
   color: var(--white);
   margin: 0;
   font-size: 2.5rem;
 }
 @media (min-width: 768px) {
-  #hero h1 {
+  #hero #overlay h1 {
     font-size: 5.625rem;
   }
 }
-#hero h1 span {
+#hero #overlay h1 span {
   color: rgba(var(--whiteO), 0.25);
 }
-#hero button {
+#hero #overlay button {
   border: none;
   background-color: var(--red);
   color: var(--white);
@@ -410,11 +414,11 @@ textarea {
   cursor: pointer;
 }
 @media (min-width: 768px) {
-  #hero button {
+  #hero #overlay button {
     padding: 30px 50px;
     font-size: 1.5625rem;
   }
 }
-#hero button i {
+#hero #overlay button i {
   margin-left: 8px;
 }
