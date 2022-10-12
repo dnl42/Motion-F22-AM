@@ -28,7 +28,7 @@ mm.add("(max-width: 799px)", () => {
   buttonSize = 1.25;
 });
 
-
+// match media has to be before timeline it is affecting
 
 
 var buttonAnimation = gsap.timeline({paused: true});
